@@ -21,7 +21,7 @@ export default function PlayerRating() {
     }, [])
 
     const fetchData = () => {
-        fetch(`http://localhost:3000/player/${username}/rating-history`, {
+        fetch(`https://reachhub1.onrender.com/player/${username}/rating-history`, {
             headers: {
                 Authorization: localStorage.getItem("token")
             }
@@ -31,7 +31,7 @@ export default function PlayerRating() {
         }).catch(err => console.log(err));
     }
     const handleClick = () => {
-      fetch(`http://localhost:3000/players/${username}/rating-history-csv`, {
+      fetch(`https://reachhub1.onrender.com/players/${username}/rating-history-csv`, {
         headers: {
           Authorization: localStorage.getItem("token")
         }

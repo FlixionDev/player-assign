@@ -34,7 +34,7 @@ export default function Topplayer() {
         fetchData();
     }, [])
     const fetchData = () => {
-        fetch('http://localhost:3000/top-players', {
+        fetch('https://reachhub1.onrender.com/top-players', {
             headers: {
                 Authorization: localStorage.getItem("token")
             }

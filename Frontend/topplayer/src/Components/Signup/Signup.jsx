@@ -23,7 +23,7 @@ export default function SignUp() {
     const handleSubmit = (event) => {
         event.preventDefault();
         if(state.name!="" && state.email!="" && state.pass!=""){
-          fetch(`http://localhost:3000/user/register`, {
+          fetch(`https://reachhub1.onrender.com/user/register`, {
             method: "POST",
             body: JSON.stringify(state),
             headers: {
